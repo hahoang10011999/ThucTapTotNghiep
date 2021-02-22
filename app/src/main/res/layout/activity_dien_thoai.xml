@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolBar"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="15dp">
+                <com.smarteist.autoimageslider.SliderView
+                    android:layout_width="match_parent"
+                    android:id="@+id/imageSlider"
+                    android:layout_height="200dp"
+                    app:sliderStartAutoCycle="true"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvIphone"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apple"
+                android:layout_below="@+id/cv"
+                android:textSize="30dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvApple"
+                android:layout_below="@+id/tvIphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:id="@+id/tvSamSung"
+                android:textStyle="bold"
+                android:layout_below="@+id/rvApple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="SamSung"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSamSung"
+                android:layout_below="@+id/tvSamSung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:id="@+id/tvOppo"
+                android:textStyle="bold"
+                android:layout_below="@+id/rvSamSung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="Oppo"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvOppo"
+                android:layout_below="@+id/tvOppo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+    </ScrollView>
+
+</layout>

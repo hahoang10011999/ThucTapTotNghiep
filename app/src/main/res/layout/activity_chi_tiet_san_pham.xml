@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlue">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_baseline_keyboard_backspace_24"/>
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ImageView
+            android:layout_below="@+id/toolBar"
+            android:id="@+id/img"
+            android:layout_width="250dp"
+            android:layout_height="350dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:layout_margin="10dp"
+            android:text="Iphone 11 64GB"
+            android:textStyle="bold"
+            android:textSize="30dp"/>
+        <TextView
+            android:id="@+id/tvGia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorRed"
+            android:layout_margin="10dp"
+            android:textSize="25dp"
+            android:maxLines="4"
+            android:layout_below="@+id/tvName"/>
+        <TextView
+            android:id="@+id/tvThongTin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:maxLines="6"
+            android:layout_below="@+id/tvGia"/>
+        <Button
+            android:id="@+id/btnThemGioHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvThongTin"
+            android:layout_centerHorizontal="true"
+            android:text="Thêm vào giỏ hàng"
+            android:background="@color/colorBrown"
+            android:textSize="30dp"
+            android:layout_margin="10dp"/>
+    </RelativeLayout>
+
+</layout>

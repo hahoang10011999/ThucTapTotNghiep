@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tvHoSo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar"
+        android:layout_margin="10dp"
+        android:text="Hồ sơ cá nhân "
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/hoTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHoSo"
+        android:layout_margin="10dp"
+        android:enabled="false"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/diaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hoTen"
+        android:layout_margin="10dp"
+        android:enabled="false"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/sdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/diaChi"
+        android:layout_margin="10dp"
+        android:enabled="false"
+        android:textSize="25dp" />
+    <LinearLayout
+        android:id="@+id/LnMK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/sdt"
+        android:visibility="invisible"
+        android:layout_margin="15dp">
+        <EditText
+            android:id="@+id/edMKCu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu cũ"/>
+        <EditText
+            android:id="@+id/edMKMoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu mới"/>
+        <EditText
+            android:id="@+id/edXacNhanMK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập lại mật khẩu mới"/>
+        <Button
+            android:id="@+id/btnLuuMK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lưu mật khẩu"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btnSua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:text="Sửa" />
+
+        <Button
+            android:id="@+id/btnLuu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:text="Lưu" />
+
+        <Button
+            android:id="@+id/btnDangXuat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng xuất" />
+
+        <Button
+            android:id="@+id/btnDoiMK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đổi mật khẩu" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
